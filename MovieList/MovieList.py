@@ -56,7 +56,7 @@ def Append():
     a=input("Does anyone else need to attend? ")
     wa=input("Have you watched this yet? ")
     fields=[t, wtw, a, wa]
-    with open(r"C:\Users\Tyler\Desktop\Personal Folder\Python Program\MovieList.csv", 'a', newline='') as csvfile:
+    with open(r"C:\Users\Tyler\Desktop\Personal Folder\Personal_Projects\MovieList\MovieList.csv", 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(fields)
     print("\n")
@@ -71,7 +71,7 @@ wtw=[]
 a=[]
 wa=[]
 
-with open(r"C:\Users\Tyler\Desktop\Personal Folder\Python Program\MovieList.csv") as csvfile:
+with open(r"C:\Users\Tyler\Desktop\Personal Folder\Personal_Projects\MovieList\MovieList.csv") as csvfile:
     file=csv.reader(csvfile)
     for row in file:
         t.append(row[0])
